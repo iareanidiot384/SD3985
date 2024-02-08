@@ -8,7 +8,8 @@ public class RubyController : MonoBehaviour
     float horizontal;
     float vertical;
     public float movementSpeed = 10;
-    public int hp = 10;
+    public int hp { get { return currenthp; }}
+    public int currenthp;
     public int maxhp = 30;
 
     public Rigidbody2D rb;
@@ -37,18 +38,18 @@ public class RubyController : MonoBehaviour
 
     public void hpChange(int value)
     {
-        hp += value;
+        currenthp += value;
 
-        if (hp > maxhp)
+        if (currenthp > maxhp)
         {
-            hp = maxhp;
+            currenthp = maxhp;
         }
-        if (hp < 0)
+        if (currenthp < 0)
         {
-            hp = 0;
+            currenthp = 0;
         }
 
-        hp = Mathf.Clamp(hp, 0, maxhp);
+        currenthp = Mathf.Clamp(hp, 0, maxhp);
 
         Debug.Log("Player HP is now: " + hp);
 
