@@ -3285,7 +3285,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.31, y: 0.98}
     newSize: {x: 1.31, y: 0.98}
     adaptiveTilingThreshold: 0.5
@@ -3410,6 +3410,10 @@ PrefabInstance:
     - target: {fileID: 6959880758977828410, guid: 8f3aa5aa9b854d445b5d36eb6a5922c0, type: 3}
       propertyPath: m_Name
       value: MetalCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959880758977828411, guid: 8f3aa5aa9b854d445b5d36eb6a5922c0, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3aa5aa9b854d445b5d36eb6a5922c0, type: 3}
